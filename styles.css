@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f0f0f0;
-  color: #000000; /* Black font color for web */
+  background-color: #ffffff; /* Default white background */
+  color: #000000; /* Default black font color */
   animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -21,13 +21,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 20px; /* Add padding to the sides */
+  text-align: left; /* Text justified for web version */
 }
 
 .logo {
   width: 150px; /* Adjust logo size */
   height: auto;
-  margin-right: 20px; /* Add spacing between logo and text */
+  margin-right: 20px; /* Add spacing between logo and text for web version */
 }
 
 .logo img {
@@ -36,19 +36,7 @@ body {
 }
 
 .text {
-  max-width: 400px; /* Adjust max-width */
-  text-align: left; /* Align text to the left of the logo */
-}
-
-.bold {
-  font-weight: bold;
-  font-size: 20px; /* Adjust font size */
-  margin-bottom: 10px; /* Adjust margin */
-}
-
-p {
-  font-size: 16px; /* Adjust font size */
-  margin: 0;
+  max-width: 400px; /* Adjust max-width for mobile */
 }
 
 /* Media query for mobile devices */
@@ -59,15 +47,12 @@ p {
   }
 
   .container {
-    flex-direction: column; /* Stack items vertically for mobile */
+    flex-direction: column; /* Change layout to column for mobile */
     align-items: center;
+    text-align: center; /* Text not justified for mobile version */
   }
 
   .logo {
-    margin-bottom: 20px; /* Add spacing between logo and text for mobile */
-  }
-
-  .text {
-    text-align: center; /* Center text on mobile */
+    margin-bottom: 20px; /* Add spacing between logo and text for mobile version */
   }
 }
