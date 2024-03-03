@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fetching Data</title>
+  <title>Responsive Landing Page</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -19,5 +19,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      // Mobile device detected
+      document.body.style.backgroundColor = "#000000"; // Set background color to black
+      document.body.style.color = "#ffffff"; // Set font color to white
+    }
+  </script>
 </body>
 </html>
