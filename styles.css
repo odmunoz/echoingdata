@@ -66,4 +66,8 @@ p {
   .logo {
     margin-bottom: 20px; /* Add spacing between logo and text for mobile */
   }
+
+  .text {
+    text-align: center; /* Center text on mobile */
+  }
 }
