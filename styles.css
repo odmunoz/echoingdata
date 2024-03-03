@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -56,12 +56,13 @@ p {
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 20px; /* Adjust padding for mobile */
+    flex-direction: column; /* Change layout to column for mobile */
   }
 
   .logo {
     width: 150px; /* Adjust logo size for mobile */
     margin-right: 0;
+    margin-bottom: 20px; /* Add spacing between logo and text for mobile */
   }
 
   .text {
