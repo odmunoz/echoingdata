@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f0f0f0;
+  color: #000000; /* Black font color for web */
   animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -17,14 +18,14 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   padding: 0 20px; /* Add padding to the sides */
 }
 
 .logo {
-  width: 150px; /* Adjust logo size for mobile */
+  width: 150px; /* Adjust logo size */
   height: auto;
   margin-right: 20px; /* Add spacing between logo and text */
 }
@@ -35,18 +36,18 @@ body {
 }
 
 .text {
+  max-width: 400px; /* Adjust max-width */
   text-align: left; /* Align text to the left of the logo */
-  max-width: 400px; /* Adjust max-width for mobile */
 }
 
 .bold {
   font-weight: bold;
-  font-size: 20px; /* Adjust font size for mobile */
-  margin-bottom: 10px; /* Adjust margin as needed */
+  font-size: 20px; /* Adjust font size */
+  margin-bottom: 10px; /* Adjust margin */
 }
 
 p {
-  font-size: 16px; /* Adjust font size for mobile */
+  font-size: 16px; /* Adjust font size */
   margin: 0;
 }
 
@@ -58,7 +59,7 @@ p {
   }
 
   .container {
-    flex-direction: column; /* Change layout to column for mobile */
+    flex-direction: column; /* Stack items vertically for mobile */
     align-items: center;
   }
 
