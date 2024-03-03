@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Default white background */
+  color: #000000; /* Default black font color */
   animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -55,6 +56,11 @@ p {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 600px) {
+  body {
+    background-color: #000000; /* Black background for mobile */
+    color: #ffffff; /* White font color for mobile */
+  }
+
   .container {
     flex-direction: column; /* Change layout to column for mobile */
   }
